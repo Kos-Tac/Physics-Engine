@@ -1,0 +1,39 @@
+﻿La génération a démarré 02/10/2019 21:13:07.
+     1>Projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Quantum\Quantum.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Quantum.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Quantum.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Contact.cpp Drag.cpp ForceRegistry.cpp GravityVoid.cpp HalfSpace.cpp Magnetism.cpp QmParticle.cpp Spring.cpp QmWorld.cpp
+         QmWorld.cpp
+     1>c:\users\kostac\documents\ing3\physics engines\quantumstarterkit\quantumstarterkit\quantum\qmworld.cpp(140): warning C4018: '<' : incompatibilité signed/unsigned
+     1>c:\users\kostac\documents\ing3\physics engines\quantumstarterkit\quantumstarterkit\quantum\qmworld.cpp(147): warning C4018: '<' : incompatibilité signed/unsigned
+         Spring.cpp
+     1>c:\users\kostac\documents\ing3\physics engines\quantumstarterkit\quantumstarterkit\quantum\spring.cpp(25): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+         QmParticle.cpp
+         Magnetism.cpp
+     1>c:\users\kostac\documents\ing3\physics engines\quantumstarterkit\quantumstarterkit\quantum\magnetism.cpp(24): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+         HalfSpace.cpp
+         GravityVoid.cpp
+         ForceRegistry.cpp
+         Drag.cpp
+         Contact.cpp
+         Génération de code en cours...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Quantum.lib" /NOLOGO Debug\Quantum.res
+         Debug\Contact.obj
+         Debug\Drag.obj
+         Debug\ForceRegistry.obj
+         Debug\GravityVoid.obj
+         Debug\HalfSpace.obj
+         Debug\Magnetism.obj
+         Debug\QmParticle.obj
+         Debug\Spring.obj
+         Debug\stdafx.obj
+         Debug\QmWorld.obj
+     1>LINK : warning LNK4068: /MACHINE non spÚcifiÚá; X86 pris par dÚfaut
+         Quantum.vcxproj -> C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Quantum.lib
+     1>Génération du projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Quantum\Quantum.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:05.55

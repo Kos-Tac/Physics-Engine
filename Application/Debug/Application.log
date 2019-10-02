@@ -1,0 +1,105 @@
+﻿La génération a démarré 02/10/2019 21:13:12.
+     1>Projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Application\Application.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Application.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Application.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Application.lib" /MACHINE:X86 /FORCE:MULTIPLE Debug\Application.obj
+         Debug\GxParticle.obj
+         Debug\GxWorld.obj
+         Debug\MyGxUpdater.obj
+         Debug\stdafx.obj
+         "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Quantum.lib"
+     1>LINK : warning LNK4075: ' /INCREMENTAL' ignoré à cause de la spécification '/FORCE'
+     1>Application.obj : warning LNK4075: ' /EDITANDCONTINUE' ignoré à cause de la spécification '/OPT:LBR'
+     1>Quantum.lib(HalfSpace.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(QmParticle.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(ForceRegistry.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(QmWorld.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(Spring.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(Magnetism.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(Drag.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(GravityVoid.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>Quantum.lib(Contact.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: __thiscall std::_Container_base12::_Container_base12(void)" (??0_Container_base12@std@@QAE@XZ) déjà défini dans Quantum.lib(HalfSpace.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: __thiscall std::_Container_base12::~_Container_base12(void)" (??1_Container_base12@std@@QAE@XZ) déjà défini dans Quantum.lib(HalfSpace.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: struct std::_Iterator_base12 * * __thiscall std::_Container_base12::_Getpfirst(void)const " (?_Getpfirst@_Container_base12@std@@QBEPAPAU_Iterator_base12@2@XZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: void __thiscall std::_Container_base12::_Orphan_all(void)" (?_Orphan_all@_Container_base12@std@@QAEXXZ) déjà défini dans Quantum.lib(HalfSpace.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: __thiscall std::locale::id::id(unsigned int)" (??0id@locale@std@@QAE@I@Z) déjà défini dans Quantum.lib(HalfSpace.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: bool __thiscall std::ios_base::good(void)const " (?good@ios_base@std@@QBE_NXZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: int __thiscall std::ios_base::flags(void)const " (?flags@ios_base@std@@QBEHXZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: __int64 __thiscall std::ios_base::width(void)const " (?width@ios_base@std@@QBE_JXZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: __int64 __thiscall std::ios_base::width(__int64)" (?width@ios_base@std@@QAE_J_J@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: int __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputc(char)" (?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: __int64 __thiscall std::basic_streambuf<char,struct std::char_traits<char> >::sputn(char const *,__int64)" (?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: void __thiscall std::basic_ios<char,struct std::char_traits<char> >::setstate(int,bool)" (?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: class std::basic_ostream<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::tie(void)const " (?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: class std::basic_streambuf<char,struct std::char_traits<char> > * __thiscall std::basic_ios<char,struct std::char_traits<char> >::rdbuf(void)const " (?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEPAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::fill(void)const " (?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDXZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: char __thiscall std::basic_ios<char,struct std::char_traits<char> >::widen(char)const " (?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: void __thiscall std::basic_ostream<char,struct std::char_traits<char> >::_Osfx(void)" (?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::operator<<(class std::basic_ostream<char,struct std::char_traits<char> > & (__cdecl*)(class std::basic_ostream<char,struct std::char_traits<char> > &))" (??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::put(char)" (?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>msvcprtd.lib(MSVCP120D.dll) : warning LNK4006: "public: class std::basic_ostream<char,struct std::char_traits<char> > & __thiscall std::basic_ostream<char,struct std::char_traits<char> >::flush(void)" (?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ) déjà défini dans Quantum.lib(QmWorld.obj) ; seconde définition ignorée
+     1>libcpmtd.lib(locale0.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(locale0.obj) : warning LNK4006: "void __cdecl std::_Facet_Register(class std::_Facet_base *)" (?_Facet_Register@std@@YAXPAV_Facet_base@1@@Z) déjà défini dans msvcprtd.lib(locale0_implib.obj) ; seconde définition ignorée
+     1>libcpmtd.lib(locale0.obj) : warning LNK4006: "private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)" (?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(locale0.obj) : warning LNK4006: "public: static void __cdecl std::_Locinfo::_Locinfo_ctor(class std::_Locinfo *,char const *)" (?_Locinfo_ctor@_Locinfo@std@@SAXPAV12@PBD@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(locale0.obj) : warning LNK4006: "public: static void __cdecl std::_Locinfo::_Locinfo_dtor(class std::_Locinfo *)" (?_Locinfo_dtor@_Locinfo@std@@SAXPAV12@@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(cout.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(iosptrs.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(locale.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xlock.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xlock.obj) : warning LNK4006: "public: __thiscall std::_Lockit::_Lockit(int)" (??0_Lockit@std@@QAE@H@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(xlock.obj) : warning LNK4006: "public: __thiscall std::_Lockit::~_Lockit(void)" (??1_Lockit@std@@QAE@XZ) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(ios.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xthrow.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xthrow.obj) : warning LNK4006: "void __cdecl std::_Xbad_alloc(void)" (?_Xbad_alloc@std@@YAXXZ) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(xthrow.obj) : warning LNK4006: "void __cdecl std::_Xlength_error(char const *)" (?_Xlength_error@std@@YAXPBD@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(xthrow.obj) : warning LNK4006: "void __cdecl std::_Xout_of_range(char const *)" (?_Xout_of_range@std@@YAXPBD@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(xdebug.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xdebug.obj) : warning LNK4006: "void * __cdecl operator new(unsigned int,struct std::_DebugHeapTag_t const &,char *,int)" (??2@YAPAXIABU_DebugHeapTag_t@std@@PADH@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(xdebug.obj) : warning LNK4006: "void __cdecl operator delete(void *,struct std::_DebugHeapTag_t const &,char *,int)" (??3@YAXPAXABU_DebugHeapTag_t@std@@PADH@Z) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(xdebug.obj) : warning LNK4006: "struct std::_DebugHeapTag_t const & __cdecl std::_DebugHeapTag_func(void)" (?_DebugHeapTag_func@std@@YAABU_DebugHeapTag_t@1@XZ) déjà défini dans msvcprtd.lib(MSVCP120D.dll) ; seconde définition ignorée
+     1>libcpmtd.lib(wlocale.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xlocale.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>libcpmtd.lib(xdateord.obj) : error LNK2038: discordance détectée pour 'RuntimeLibrary' : la valeur 'MTd_StaticDebug' ne correspond pas à la valeur 'MDd_DynamicDebug' in Application.obj
+     1>LIBCMTD.lib(dbgheap.obj) : warning LNK4006: __CrtSetCheckCount déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(dbgheap.obj) : warning LNK4006: __calloc_dbg déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(dbgheap.obj) : warning LNK4006: __free_dbg déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: __thiscall std::bad_cast::bad_cast(class std::bad_cast const &)" (??0bad_cast@std@@QAE@ABV01@@Z) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: __thiscall std::bad_cast::bad_cast(char const *)" (??0bad_cast@std@@QAE@PBD@Z) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: __thiscall std::exception::exception(char const * const &)" (??0exception@std@@QAE@ABQBD@Z) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: __thiscall std::exception::exception(class std::exception const &)" (??0exception@std@@QAE@ABV01@@Z) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: virtual __thiscall std::bad_cast::~bad_cast(void)" (??1bad_cast@std@@UAE@XZ) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: virtual __thiscall std::exception::~exception(void)" (??1exception@std@@UAE@XZ) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(stdexcpt.obj) : warning LNK4006: "public: virtual char const * __thiscall std::exception::what(void)const " (?what@exception@std@@UBEPBDXZ) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(winapisupp.obj) : warning LNK4006: ___crtSetUnhandledExceptionFilter déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(winapisupp.obj) : warning LNK4006: ___crtTerminateProcess déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(winapisupp.obj) : warning LNK4006: ___crtUnhandledException déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(dbghook.obj) : warning LNK4006: __crt_debugger_hook déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(wsetloca.obj) : warning LNK4006: __configthreadlocale déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0dat.obj) : warning LNK4006: __amsg_exit déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0dat.obj) : warning LNK4006: __cexit déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0dat.obj) : warning LNK4006: __exit déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0dat.obj) : warning LNK4006: __initterm_e déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0dat.obj) : warning LNK4006: _exit déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(invarg.obj) : warning LNK4006: __invalid_parameter déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(invarg.obj) : warning LNK4006: __invoke_watson déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(vsnprnc.obj) : warning LNK4006: _vsprintf_s déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(mlock.obj) : warning LNK4006: __lock déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(mlock.obj) : warning LNK4006: __unlock déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(winxfltr.obj) : warning LNK4006: __XcptFilter déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(hooks.obj) : warning LNK4006: "void __cdecl terminate(void)" (?terminate@@YAXXZ) déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4006: ___xi_a déjà défini dans MSVCRTD.lib(cinitexe.obj) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4006: ___xi_z déjà défini dans MSVCRTD.lib(cinitexe.obj) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4006: ___xc_a déjà défini dans MSVCRTD.lib(cinitexe.obj) ; seconde définition ignorée
+     1>LIBCMTD.lib(crt0init.obj) : warning LNK4006: ___xc_z déjà défini dans MSVCRTD.lib(cinitexe.obj) ; seconde définition ignorée
+     1>LIBCMTD.lib(errmode.obj) : warning LNK4006: ___set_app_type déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(printf.obj) : warning LNK4006: _printf déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LIBCMTD.lib(dbgrptw.obj) : warning LNK4006: __CrtDbgReportW déjà défini dans MSVCRTD.lib(MSVCR120D.dll) ; seconde définition ignorée
+     1>LINK : warning LNK4098: conflit entre la bibliothèque par défaut 'MSVCRTD' et les autres bibliothèques ; utilisez /NODEFAULTLIB:library
+     1>LINK : warning LNK4098: conflit entre la bibliothèque par défaut 'LIBCMTD' et les autres bibliothèques ; utilisez /NODEFAULTLIB:library
+     1>C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Debug\Application.exe : fatal error LNK1319: 20 discordances détectées
+     1>Génération du projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Application\Application.vcxproj" terminée (Build cible(s)) -- ÉCHEC.
+
+ÉCHEC de la build.
+
+Temps écoulé 00:00:00.57
