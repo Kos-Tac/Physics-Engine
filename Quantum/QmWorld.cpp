@@ -122,6 +122,9 @@ bool QmWorld::getGravity(){
 	return gravity;
 }
 
+bool QmWorld::getCollisions(){
+	return collisions;
+}
 
 void QmWorld::toggleGravity(){
 	gravity = !gravity;
@@ -186,8 +189,8 @@ void QmWorld::resolve(std::vector<Contact*> contacts){
 			glm::vec3 velUp2 = vel2 - velNorm2;
 			float mass1 = 1 / c->body1->getInvMass();
 			float mass2 = 1 / c->body2->getInvMass();
-			c->body1->setVelocity(((velNorm1 * (mass1 - mass2) + 2 * mass2*velNorm2) / (mass1 + mass2) + velUp1));
-			c->body2->setVelocity(((velNorm2 * (mass2 - mass1) + 2 * mass1*velNorm1) / (mass1 + mass2) + velUp2));
+			c->body1->setVelocity(0.90f*((velNorm1 * (mass1 - mass2) + 2 * mass2*velNorm2) / (mass1 + mass2) + velUp1));
+			c->body2->setVelocity(0.90f*((velNorm2 * (mass2 - mass1) + 2 * mass1*velNorm1) / (mass1 + mass2) + velUp2));
 			//c->body1->setVelocity(glm::vec3(0.01));
 			//c->body2->setVelocity(glm::vec3(0.01));
 		}

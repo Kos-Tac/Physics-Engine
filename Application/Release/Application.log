@@ -1,1 +1,17 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets(67,5): error MSB8020: Les outils de génération pour v120 (ensemble d'outils de plateforme = 'v120') sont introuvables. Pour générer à l'aide des outils de génération v120, installez les outils de génération v120. Vous avez également la possibilité de mettre à niveau les outils Visual Studio actuels en sélectionnant le menu Projet ou en cliquant avec le bouton droit sur la solution, puis en sélectionnant "Recibler la solution".
+﻿La génération a démarré 04/10/2019 16:24:40.
+     1>Projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Application\Application.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Application.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Application.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Application.lib" /MACHINE:X86 /SAFESEH Release\Application.obj
+         Release\GxParticle.obj
+         Release\GxWorld.obj
+         Release\MyGxUpdater.obj
+         Release\stdafx.obj
+         "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Quantum.lib"
+         Génération de code en cours
+         Fin de la génération du code
+         Application.vcxproj -> C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Application.exe
+     1>Génération du projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Application\Application.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:01.66

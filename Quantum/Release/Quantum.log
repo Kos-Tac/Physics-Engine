@@ -1,1 +1,24 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets(67,5): error MSB8020: Les outils de génération pour v120 (ensemble d'outils de plateforme = 'v120') sont introuvables. Pour générer à l'aide des outils de génération v120, installez les outils de génération v120. Vous avez également la possibilité de mettre à niveau les outils Visual Studio actuels en sélectionnant le menu Projet ou en cliquant avec le bouton droit sur la solution, puis en sélectionnant "Recibler la solution".
+﻿La génération a démarré 04/10/2019 16:24:39.
+     1>Projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Quantum\Quantum.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\Quantum.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Spring.cpp
+         Spring.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Quantum.lib" /NOLOGO /LTCG Release\Quantum.res
+         Release\Contact.obj
+         Release\Drag.obj
+         Release\ForceRegistry.obj
+         Release\GravityVoid.obj
+         Release\HalfSpace.obj
+         Release\Magnetism.obj
+         Release\QmParticle.obj
+         Release\Spring.obj
+         Release\stdafx.obj
+         Release\QmWorld.obj
+     1>LINK : warning LNK4068: /MACHINE non spÚcifiÚá; X86 pris par dÚfaut
+         Quantum.vcxproj -> C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Release\Quantum.lib
+     1>Génération du projet "C:\Users\KosTac\Documents\ING3\Physics engines\QuantumStarterKit\QuantumStarterKit\Quantum\Quantum.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:01.71

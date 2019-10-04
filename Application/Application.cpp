@@ -25,6 +25,7 @@ GxWorld gxWorld;
 QmWorld pxWorld;
 
 glm::vec3* mousePointer;
+QmParticle* mouseParticle;
 
 int scene = 0;
 
@@ -44,6 +45,7 @@ float camHeight = 0.f;
 float mx = 0.f;
 float my = 0.f;
 int seedSize = 25;
+
 
 // Variables du calcul de framerate 
 int timeold = 0;
@@ -135,6 +137,16 @@ void createParticleDrag()
 	
 }
 
+void createMouseParticle()
+{
+	float radius = 0.1f;
+	GxParticle* g = new GxParticle(glm::vec3(1, 1, 1), radius);
+	mouseParticle = new QmParticle(glm::vec3(0, 0, 0), glm::vec3(0, 0, 0), glm::vec3(0, 4.5, 0), radius, -1.0f, -1.0f);
+	mouseParticle->gxUpdater = new MyGxUpdater(g);
+	gxWorld.addParticle(g);
+	pxWorld.addParticle(mouseParticle);
+}
+
 void createParticle2()
 {
 	float radius = 0.1f + 0.2f*((rand() % 100) / 100.f);
@@ -182,7 +194,7 @@ void createParticleVoid()
 
 	float radius3 = 0.1f;
 	GxParticle* g3 = new GxParticle(glm::vec3(0.5, 0.5, 0.5), radius3);
-	QmParticle* p3 = new QmParticle(glm::vec3(0), glm::vec3(0, 11.0f, 0), glm::vec3(8.5f, 0, 0), radius3, static_cast <float> (rand()) / static_cast <float> (RAND_MAX), 0.8f);//2.4916388 * pow(10, -14));
+	QmParticle* p3 = new QmParticle(glm::vec3(0), glm::vec3(-0.5f, 9.0f, 0), glm::vec3(8.5f, 0, 0), radius3, static_cast <float> (rand()) / static_cast <float> (RAND_MAX), 0.5f);//2.4916388 * pow(10, -14));
 	p3->gxUpdater = new MyGxUpdater(g3);
 	gxWorld.addParticle(g3);
 	pxWorld.addParticle(p3);
@@ -244,10 +256,12 @@ void initScene2()
 	printf("Scene 2.\n");
 	printf("Scene with Springs.\n");
 	mousePointer = new glm::vec3(0, 4.5, 0);
+	if (!pxWorld.getGravity())
+		pxWorld.toggleGravity();
+	//createMouseParticle();
 	for (int i = 0; i < 10; i++){
 			createParticle2();
 	}
-		
 	std::vector<QmParticle*> particleSpring;
 	for each (QmParticle* p in pxWorld.getBodies()){
 		particleSpring.push_back(p);
@@ -256,28 +270,29 @@ void initScene2()
 	for (int i = 0; i < 9; i++){
 		pxWorld.addForceRegistry(new ForceRegistry(particleSpring[i], new Spring(particleSpring[i + 1])));
 	}
+	/*
 	for (int i = 9; i > 0; i--){
 		pxWorld.addForceRegistry(new ForceRegistry(particleSpring[i], new Spring(particleSpring[i -1])));
-	}
+	}*/
 
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[3], new Spring(particleSpring[1])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[1], new Spring(particleSpring[3])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[1], new Spring(particleSpring[3])));
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[4], new Spring(particleSpring[1])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[1], new Spring(particleSpring[4])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[1], new Spring(particleSpring[4])));
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[4], new Spring(particleSpring[2])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[2], new Spring(particleSpring[4])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[2], new Spring(particleSpring[4])));
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[2], new Spring(particleSpring[5])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[5], new Spring(particleSpring[2])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[5], new Spring(particleSpring[2])));
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[3], new Spring(particleSpring[5])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[5], new Spring(particleSpring[3])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[5], new Spring(particleSpring[3])));
 
 
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[6], new Spring(particleSpring[9])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[9], new Spring(particleSpring[6])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[9], new Spring(particleSpring[6])));
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[7], new Spring(particleSpring[9])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[9], new Spring(particleSpring[7])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[9], new Spring(particleSpring[7])));
 	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[6], new Spring(particleSpring[8])));
-	pxWorld.addForceRegistry(new ForceRegistry(particleSpring[8], new Spring(particleSpring[6])));
+	//pxWorld.addForceRegistry(new ForceRegistry(particleSpring[8], new Spring(particleSpring[6])));
 }
 
 void initScene3()
@@ -285,8 +300,11 @@ void initScene3()
 	printf("Scene 3: Magnetism.\n");
 	printf("Type space to pause.\n");
 	mousePointer = new glm::vec3(0, 4.5, 0);
+	//createMouseParticle();
 	if (pxWorld.getGravity())
 		pxWorld.toggleGravity();
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
 	for (int i = 0; i < 10; i++)
 		createParticle3();
 
@@ -294,6 +312,8 @@ void initScene3()
 	std::vector<QmParticle*> particlesMagn;
 	for each (QmParticle* p in pxWorld.getBodies()){
 		particlesMagn.push_back(p);
+		p->resetAcc();
+		p->resetVel();
 	}
 	for (int j = 0; j < particlesMagn.size(); j++){
 		for (int m = 0; m < particlesMagn.size(); m++){
@@ -311,6 +331,10 @@ void initScene4()
 	for (int i = 0; i < 30; i++)
 		createParticle();
 	createHalfSpaces();
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
+	if (!pxWorld.getGravity())
+		pxWorld.toggleGravity();
 }
 
 void initScene5()
@@ -321,6 +345,10 @@ void initScene5()
 	for (int i = 0; i < 30; i++)
 		createParticle();
 	createHalfSpaces2();
+	if (!pxWorld.getGravity())
+		pxWorld.toggleGravity();
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
 }
 
 void initScene6()
@@ -330,6 +358,10 @@ void initScene6()
 	mousePointer = new glm::vec3(0, 4.5, 0);
 	createParticlesWithSeed();
 	createHalfSpaces();
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
+	if (!pxWorld.getGravity())
+		pxWorld.toggleGravity();
 }
 
 void initScene7()
@@ -339,6 +371,8 @@ void initScene7()
 	mousePointer = new glm::vec3(0, 4.5, 0);
 	if (pxWorld.getGravity())
 		pxWorld.toggleGravity();
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
 
 	createParticleVoid();
 
@@ -353,6 +387,7 @@ void initScene7()
 				pxWorld.addForceRegistry(new ForceRegistry(particlesVoid[j], new GravityVoid(particlesVoid[m])));
 		}
 	}
+	
 }
 
 void initScene8()
@@ -362,6 +397,8 @@ void initScene8()
 	mousePointer = new glm::vec3(0, 4.5, 0);
 	if (pxWorld.getGravity())
 		pxWorld.toggleGravity();
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
 
 	for (int i = 0; i < 30; i++)
 		createParticleVoidRand();
@@ -386,7 +423,8 @@ void initScene9()
 	mousePointer = new glm::vec3(0, 4.5, 0);
 	if (pxWorld.getGravity())
 		pxWorld.toggleGravity();
-
+	if (!pxWorld.getCollisions())
+		pxWorld.toggleCollisions();
 	createParticleDestruction();
 
 
@@ -674,7 +712,9 @@ void motionFunc(int x, int y)
 	if (buttons == 3)
 	{
 		if (mousePointer)
-		*mousePointer += glm::vec3(x - mx, my - y, 0.f) / 15.f;
+			*mousePointer += glm::vec3(x - mx, my - y, 0.f) / 15.f;
+		if (mouseParticle)
+			mouseParticle->setPos(mouseParticle->getPos() + (glm::vec3(x - mx, my - y, 0.f) / 15.f));
 	}
 
 	mx = (float)x;

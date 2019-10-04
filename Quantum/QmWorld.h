@@ -24,6 +24,7 @@ namespace Quantum {
 		std::vector<Body*> getBodies();
 		std::vector<ForceRegistry*> getForces();
 		bool getGravity();
+		bool getCollisions();
 		void update(float dt);
 		float tick();
 		void integrateTick(float dt);
